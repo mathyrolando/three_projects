@@ -434,7 +434,7 @@ iframe#viewer {
 .image-container {
     position: relative;
     width: 100%;  /* Asegura que el contenedor ocupe todo el ancho del elemento padre */
-    padding-bottom: 56.25%;  /* Relación de aspecto para 16:9. Puedes cambiar este valor según lo necesites. Por ejemplo, 4:3 sería 75% */
+    padding-bottom: 65%;  /* Relación de aspecto para 16:9. Puedes cambiar este valor según lo necesites. Por ejemplo, 4:3 sería 75% */
     overflow: hidden;  /* Asegura que la imagen no se desborde del contenedor */
 }
 
