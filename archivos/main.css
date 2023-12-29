@@ -36,20 +36,6 @@
 
 }
 
-@font-face {
-    font-family: 'Roboto Mono';
-    src: local('Roboto Mono'), local('RobotoMono-Regular'), url('../files/RobotoMono-Regular.woff2') format('woff2');
-    font-style: normal;
-    font-weight: 400;
-}
-
-@font-face {
-    font-family: 'Roboto Mono';
-    src: local('Roboto Mono Medium'), local('RobotoMono-Medium'), url('../files/RobotoMono-Medium.woff2') format('woff2');
-    font-style: normal;
-    font-weight: 500;
-}
-
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -67,7 +53,7 @@ html {
 
 body {
     font-family: 'Roboto Mono', monospace;
-    margin: 0px;
+    margin: 0;
     color: var(--text-color);
     background-color: var(--background-color);
 }
@@ -121,14 +107,14 @@ h1 a {
     color: var(--color-blue);
     border-radius: 4px;
     line-height: 16px;
-    padding: 0px 2px;
+    padding: 0 2px;
     margin-left: 6px;
     font-size: .9rem;
 }
 #panel {
     position: fixed;
     z-index: 100;
-    left: 0px;
+    left: 0;
     width: var(--panel-width);
     height: 100%;
     overflow: auto;
@@ -138,21 +124,7 @@ h1 a {
     transition: 0s 0s height;
 }
 
-#panel #clearSearchButton {
-    width: 48px;
-    height: 48px;
-    display: none;
-    background-color: var(--text-color);
-    background-size: var(--icon-size);
-    -webkit-mask-image: url(../files/ic_close_black_24dp.svg);
-    -webkit-mask-position: 50% 50%;
-    -webkit-mask-repeat: no-repeat;
-    mask-image: url(../files/ic_close_black_24dp.svg);
-    mask-position: 50% 50%;
-    mask-repeat: no-repeat;
-    cursor: pointer;
-    margin-right: 0px;
-}
+
 
 #panel.searchFocused #clearSearchButton {
     display: block;
@@ -169,22 +141,7 @@ h1 a {
     padding-left: 0;
 }
 
-#panel #expandButton {
-    width: 48px;
-    height: 48px;
-    margin-right: 4px;
-    margin-left: 4px;
-    display: none;
-    cursor: pointer;
-    background-color: var(--text-color);
-    background-size: var(--icon-size);
-    -webkit-mask-image: url(../files/ic_menu_black_24dp.svg);
-    -webkit-mask-position: 50% 50%;
-    -webkit-mask-repeat: no-repeat;
-    mask-image: url(../files/ic_menu_black_24dp.svg);
-    mask-position: 50% 50%;
-    mask-repeat: no-repeat;
-}
+
 
 #panel #sections {
     display: flex;
@@ -238,43 +195,6 @@ body.home #panel #sections {
     content: "";
 }
 
-#panel #filterInput {
-    flex: 1;
-    width: 100%;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--text-color);
-    outline: none;
-    border: 0px;
-    background-color: var(--text-color);
-    background-size: var(--icon-size);
-    -webkit-mask-image: url(../files/ic_search_black_24dp.svg);
-    -webkit-mask-position: 0 50%;
-    -webkit-mask-repeat: no-repeat;
-    mask-image: url(../files/ic_search_black_24dp.svg);
-    mask-position: 0 50%;
-    mask-repeat: no-repeat;
-    font-family: 'Roboto Mono', monospace;
-}
-
-#panel #language {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--text-color);
-    border: 0px;
-    background-image: url(ic_arrow_drop_down_black_24dp.svg);
-    background-size: var(--icon-size);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-color: var(--background-color);
-    padding: 2px 24px 4px 24px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin-right: 10px;
-    text-align-last: right;
-}
 
 #panel #language:focus {
     outline: none;
@@ -297,8 +217,8 @@ body.home #panel #sections {
 
 #panel #content ul {
     list-style-type: none;
-    padding: 0px;
-    margin: 0px 0 20px 0;
+    padding: 0;
+    margin: 0 0 20px 0;
 }
 #panel #content ul li {
     margin: 1px 0;
@@ -367,7 +287,7 @@ body.home #panel #sections {
 
 body.home #panel #content h2 {
     margin-bottom: 2px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     margin-top: 18px;
     border-top: none;
     padding-top: 6px;
@@ -382,7 +302,7 @@ body.home #panel #content h2 {
 #viewer,
 iframe {
     position: absolute;
-    border: 0px;
+    border: 0;
     left: 0;
     right: 0;
     width: 100%;
@@ -405,7 +325,7 @@ iframe#viewer {
 
     padding: 12px;
     border-radius: 50%;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 
     background-color: #FFF;
     opacity: .9;
@@ -431,10 +351,11 @@ iframe#viewer {
     font-weight: 500;
 }
 
+
 .image-container {
     position: relative;
     width: 100%;  /* Asegura que el contenedor ocupe todo el ancho del elemento padre */
-    padding-bottom: 65%;  /* Relación de aspecto para 16:9. Puedes cambiar este valor según lo necesites. Por ejemplo, 4:3 sería 75% */
+    padding-bottom: 56.25%;  /* Relación de aspecto para 16:9. Puedes cambiar este valor según lo necesites. Por ejemplo, 4:3 sería 75% */
     overflow: hidden;  /* Asegura que la imagen no se desborde del contenedor */
 }
 
@@ -446,6 +367,7 @@ iframe#viewer {
     height: 100%;  /* Ajusta la altura automáticamente según la relación de aspecto */
     object-fit: cover;  /* Asegura que la imagen cubra completamente el contenedor sin distorsionar la relación de aspecto */
 }
+
 
 
 #projects {
@@ -587,7 +509,6 @@ iframe#viewer {
         right: 0;
         z-index: 1000;
         overflow-x: hidden;
-        transition: 0s 0s height;
         border: none;
         height: var(--header-height);
         transition: 0s 0.2s height;
@@ -606,7 +527,6 @@ iframe#viewer {
         top: 0;
         bottom: 0;
         z-index: 1000;
-        pointer-events: none;
         transition: .2s background-color;
     }
     #panel.open #panelScrim {
@@ -622,7 +542,6 @@ iframe#viewer {
         background: var(--background-color);
         box-shadow: 0 0 8px rgba(0,0,0,.1);
         width: calc(100vw - 60px);
-        height: 300px;
         max-width: 360px;
         z-index: 10000;
         transition: .25s transform;
@@ -630,7 +549,6 @@ iframe#viewer {
         margin-right: -380px;
         line-height: 2rem;
     }
-
     #panel.open #contentWrapper {
         transform: translate3d(-380px, 0 ,0);
     }
