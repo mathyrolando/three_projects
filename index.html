@@ -2,117 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Three.js – JavaScript 3D Library</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@threejs">
-    <meta name="twitter:title" content="Three.js – JavaScript 3D library">
-    <meta property="og:image" content="https://threejs.org/files/share.png">
+    <title>Three.js – Proyectos</title>
     <link rel="stylesheet" type="text/css" href="archivos/main.css">
-    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=CTAmXhBkQBJGEbQUV8Sh9iwSA1YCJVngyoXoyCsSrPUFgjZ-RDtFB1NUd7bVl9OH" charset="UTF-8"></script>
 </head>
 <body class="home">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-JPPX9MZGZ4"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'G-JPPX9MZGZ4');
-</script>
-<div id="panel">
-    <div id="header">
-        <h1>
-            <span translate="no">Mathy</span>
-        </h1>
-        <div id="expandButton"></div>
-    </div>
-    <div id="panelScrim"></div>
-    <div id="contentWrapper">
-        <div id="content">
-            <h2>Codigo</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/mathyrolando/neon_cube">Cubo de Neón</a>
-                </li>
-                <li>
-                    <a href="https://github.com/mathyrolando/sistema_solar">Sistema Solar</a>
-                </li>
-                <li>
-                    <a href="https://github.com/mathyrolando/ascii_donut">Donut con Ascii</a>
-                </li>
-                <li>
-                    <a href="https://github.com/mathyrolando/rubiks_cube">Cubo de Rubik</a>
-                </li>
-            </ul>
+    <div id="panel">
+        <div id="header">
+            <h1>
+                <span translate="no">Mathy</span>
+            </h1>
+            <div id="expandButton"></div>
+        </div>
+        <div id="panelScrim"></div>
+        <div id="contentWrapper">
+            <div id="content">
+                <h2>Codigo</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/mathyrolando/neon_cube">Cubo de Neón</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mathyrolando/sistema_solar">Sistema Solar</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mathyrolando/ascii_donut">Donut con Ascii</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mathyrolando/rubiks_cube">Cubo de Rubik</a>
+                    </li>
+                </ul>
 
-            <h2>Paginas</h2>
-            <ul>
-                <li>
-                    <a href="https://github.com/mathyrolando/neon_cube">Cubo de Neón</a>
-                </li>
-                <li>
-                    <a href="https://github.com/mathyrolando/sistema_solar">Sistema Solar</a>
-                </li>
-                <li>
-                    <a href="https://github.com/mathyrolando/ascii_donut_page">Donut con Ascii</a>
-                </li>
-                <li>
-                    <a href="https://github.com/mathyrolando/rubiks_cube_page">Cubo de Rubik</a>
-                </li>
-            </ul>
+                <h2>Paginas</h2>
+                <ul>
+                    <li>
+                        <a href="https://github.com/mathyrolando/neon_cube">Cubo de Neón</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mathyrolando/sistema_solar">Sistema Solar</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mathyrolando/ascii_donut_page">Donut con Ascii</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mathyrolando/rubiks_cube_page">Cubo de Rubik</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
-<script>
-    var panel = document.getElementById('panel');
-    var expandButton = document.getElementById('expandButton');
-    var panelScrim = document.getElementById('panelScrim');
 
-    expandButton.addEventListener('click', function(event) {
+    <div id="viewer">
+        <div id="projects">
+            <div class="image-container">
+                <a href="https://mathyrolando.github.io/neon_cube/" target="_blank" rel="noopener">
+                    <img src="archivos/miniaturas/neon_cube.png" loading="lazy" alt="Cubo de neón"/>
+                </a>
+            </div>
 
-        panel.classList.toggle('open');
-        event.preventDefault();
+            <div class="image-container">
+                <a href="https://mathyrolando.github.io/sistema_solar/" target="_blank" rel="noopener">
+                    <img src="archivos/miniaturas/sistema_solar.png" loading="lazy" alt="Sistema Solar"/>
+                </a>
+            </div>
 
-    });
+            <div class="image-container">
+                <a href="https://mathyrolando.github.io/ascii_donut_page/" target="_blank" rel="noopener">
+                    <img src="archivos/miniaturas/ascii_donut.png" loading="lazy" alt="Donut con simbolos ascii"/>
+                </a>
+            </div>
 
-    panelScrim.onclick = function(event) {
+            <div class="image-container">
+                <a href="https://mathyrolando.github.io/rubiks_cube_page/" target="_blank" rel="noopener">
+                    <img src="archivos/miniaturas/rubiks_cube.png" loading="lazy" alt="Cubo de rubik"/>
+                </a>
+            </div>
 
-        event.preventDefault();
-        panel.classList.toggle('open');
-
-    }
-    ;
-</script>
-<div id="viewer">
-    <div id="projects">
-        <!-- October 2022 -->
-        <div class="image-container">
-            <a href="https://mathyrolando.github.io/neon_cube/" target="_blank" rel="noopener">
-                <img src="archivos/miniaturas/neon_cube.png" loading="lazy" alt="Cubo de neón"/>
-            </a>
         </div>
-
-        <div class="image-container">
-            <a href="https://mathyrolando.github.io/sistema_solar/" target="_blank" rel="noopener">
-                <img src="archivos/miniaturas/sistema_solar.png" loading="lazy" alt="Sistema Solar"/>
-            </a>
-        </div>
-
-        <div class="image-container">
-            <a href="https://mathyrolando.github.io/ascii_donut_page/" target="_blank" rel="noopener">
-                <img src="archivos/miniaturas/ascii_donut.png" loading="lazy" alt="Donut con simbolos ascii"/>
-            </a>
-        </div>
-
-        <div class="image-container">
-            <a href="https://mathyrolando.github.io/rubiks_cube_page/" target="_blank" rel="noopener">
-                <img src="archivos/miniaturas/rubiks_cube.png" loading="lazy" alt="Cubo de rubik"/>
-            </a>
-        </div>
-
     </div>
-</div>
 </body>
 </html>
